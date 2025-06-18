@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>챕터 1: 둥지</title>
+  <body>
+           <div style="position: relative;">
+  <img src="C:\Users\jh106\OneDrive\바탕 화면\병아리\웹디\16.png" style="width: 250px; position: absolute; z-index: 11;top: 240px; left: 830px;">
+  <p style="position: relative; z-index: 1;"></p>
+       <div style="position: relative;">
+  <img src="C:\Users\jh106\OneDrive\바탕 화면\병아리\웹디\0.png" style="width: 450px; position: absolute; z-index: 10;top: 220px; left: 735px;">
+  <p style="position: relative; z-index: 1;"></p>
+ <img 
+  src="C:\Users\jh106\OneDrive\바탕 화면\병아리\웹디\Group 2 (3).png" 
+  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 1800px; width: auto; z-index: 0;">
+</div>
+       </body>
+  <style>
+
+    body 
+    {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #FBFF7D;
+      height: 90vh;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .back-triangle {
+      width: 42.44px;
+      height: 42.44px;
+      background: #B34B00;
+      clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+      transform: rotate(180deg);
+    }
+
+    .back-button {
+      color: #B34B00;
+      font-weight: 500;
+      background: none;
+      border: none;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    .chapter-header {
+      background: radial-gradient(circle, #FFE900 0%, #FFD900 100%);
+      width: 785px;
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 500;
+      color: #000;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 35px;
+      border-radius: 50px;
+    }
+
+    .content-box {
+      background-color: white;
+      width: 746px;
+      height: 705px;
+      padding: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 0;
+      position: absolute;
+      left: 50%;
+      top: 150px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .egg-image {
+      width: 300px;
+      height: auto;
+    }
+
+    .question {
+      margin-top: 140px;
+      font-size: 35px;
+      font-weight: 500;
+    }
+
+    .choice-button {
+      width: 407px;
+      height: 61px;
+      border: none;
+      border-radius: 30px;
+      font-size: 35px;
+      font-weight: 500;
+      background: radial-gradient(circle, #FFE900 0%, #FFD900 100%);
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .choice-male {
+      top: 660px;
+    }
+
+    .choice-female {
+      top: 760px;
+    }
+  </style>
+</head>
+<body>
+  <div class="back-button-container">
+    <div class="back-triangle"></div>
+    <button class="back-button" onclick="location.href='병아리 메인.html'">나가기</button>
+  </div>
+
+  <div class="chapter-header">챕터 1 : 초등학교 정문</div>
+
+  <div class="content-box">
+    <img src="egg.png" alt="Egg in nest" class="egg-image" />
+    <div class="question">가만히 있다보니 상자가 다시 이동했다!<br>어디로 가는걸까?</div>
+  </div>
+
+  <button class="choice-button choice-female" onclick="location.href='챕터1-9.1.html'">다음으로..</button>
+</body>
+</html>

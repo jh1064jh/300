@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>챕터 1: 둥지</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #FBFF7D;
+      height: 100vh;
+      position: relative;
+      font-weight: 500;
+    }
+
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .back-triangle {
+      width: 42.44px;
+      height: 42.44px;
+      background: #B34B00;
+      clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+      transform: rotate(180deg);
+    }
+
+    .back-button {
+      color: #B34B00;
+      font-weight: 500;
+      background: none;
+      border: none;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    .chapter-header {
+      background: radial-gradient(circle, #FFE900 0%, #FFD900 100%);
+      width: 786px;
+      height: 101px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 500;
+      color: #000;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 113px;
+      border-radius: 50px;
+    }
+
+    .content-box {
+      background-color: white;
+      width: 766px;
+      height: 765px;
+      padding: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 0;
+      position: absolute;
+      left: 50%;
+      top: 312px;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .egg-image {
+      width: 300px;
+      height: auto;
+    }
+
+    .question {
+      margin-top: 180px;
+      font-size: 35px;
+      font-weight: 500;
+    }
+
+    .choice-button {
+      width: 407px;
+      height: 61px;
+      border: none;
+      border-radius: 30px;
+      font-size: 35px;
+      font-weight: 500;
+      background: radial-gradient(circle, #FF6200 0%, #E42200 100%);
+      cursor: pointer;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .choice-female {
+      top: 897px;
+    }
+  </style>
+</head>
+<body>
+  <div class="back-button-container">
+    <div class="back-triangle"></div>
+    <button class="back-button" onclick="location.href='병아리 메인.html'">나가기</button>
+  </div>
+
+  <div class="chapter-header">배드엔딩17 : 열사병 </div>
+
+  <div class="content-box">
+    <img src="egg.png" alt="Egg in nest" class="egg-image" />
+    <div class="question">너무.. 더워...</div>
+  </div>
+
+  <button class="choice-button choice-female" onclick="location.href='병아리 메인.html'">마무리</button>
+</body>
+</html>
+

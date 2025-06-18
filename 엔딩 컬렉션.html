@@ -3,37 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>병아리의 건강</title>
+  <title>엔딩 컬렉션</title>
    <body>
            <div style="position: relative;">
-  <img src="웹디/Vector 12.png" style="width: 800px; position: absolute; z-index: 0;top: -20px; left: 1103px;">
+  <img src="웹디/Group 27.png" style="width: 1400px; position: absolute; z-index: 0;top: 500px; left: 13%;">
   <p style="position: relative; z-index: 1;"></p>
        <div style="position: relative;">
-         <img src="웹디/Ellipse 18.png" style="width: 720px; position: absolute; z-index: 0;top: 1400px; left: 1185px;">
+         <img src="웹디/엔딩 컬력션.png" style="width: 700px; position: absolute; z-index: 0;top: 20px; left: 30%;">
   <p style="position: relative; z-index: 1;"></p>
        <div style="position: relative;">
-          <img src="웹디/Vector 10.png" style="width: 1400px; position: absolute; z-index: 0;top: 2500px; left: 0px;">
-  <p style="position: relative; z-index: 1;"></p>
        <div style="position: relative;">
-                 <img src="웹디/Vector 11.png" style="width: 600px; position: absolute; z-index: 0;top: 1300px; left: 0px;">
+ <img src="웹디/병아리의 꿈.png" style="width: 250px; position: absolute; z-index: 12;top: 3900px; left: 30px;">
   <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-         <img src="웹디/Ellipse 19.png" style="width: 380px; position: absolute; z-index: 0;top: 700px; left: 0px;">
-  <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-         <img src="웹디/병아리의 꿈.png" style="width: 250px; position: absolute; z-index: 0;top: 2860px; left: 30px;">
-  <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-        <img src="웹디/Group 46.png" style="width: 730px; position: absolute; z-index: 0;top: 280px; left: 5%;">
-  <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-         <img src="웹디/Group 45.png" style="width: 730px; position: absolute; z-index: 0;top: 400px; left: 60%;">
-  <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-        <img src="웹디/111.png" style="width: 760px; position: absolute; z-index: 9;top: 20px; left: 30%;">
-  <p style="position: relative; z-index: 1;"></p>
-       <div style="position: relative;">
-       </body>
+          <div id="ending-collection">
+    <div data-ending-id="ending1">
+      <img src="웹디/10.png" class="ending-img locked" alt="C:\Users\jh106\OneDrive\바탕 화면\병아리\배드엔딩16.html"style="position: absolute; top: 2300px; left: 1400px; width: 200px;">
+      <div id="ending-collection">
+    <div data-ending-id="ending1">
+  <script>
+    function loadUnlockedEndings() {
+      const unlocked = JSON.parse(localStorage.getItem('unlockedEndings')) || [];
+      unlocked.forEach(id => {
+        const el = document.querySelector(`[data-ending-id="${id}"] img`);
+        if (el) {
+          el.classList.remove('locked');
+          el.classList.add('unlocked');
+        }
+      });
+    }
+
+    loadUnlockedEndings();
+  </script>
+  
        </body>
   <style>
     body {
@@ -41,7 +42,7 @@
       background-color: #FBFF7D;
       font-family: 'Arial', sans-serif;
       text-align: center;
-      height: 2500px;
+      height: 4000px;
       position: relative;
     }
 
@@ -51,6 +52,15 @@
       left: 20px;
       width: 397px;
       height: 450px;
+    }
+    .background-shape {
+      position: absolute;
+      top: 3700px;
+      left: -104px;
+      width: 2008px;
+      height: 300px;
+      background-color: #64DB46;
+      z-index: -2;
     }
   .back-button-container {
     position: absolute;
@@ -194,14 +204,6 @@
   </style>
 </head>
 <body>
-  <p style="position: absolute; top: 2645px; left: 51.5%; transform: translateX(-50%); font-size: 35px; font-weight: bold; color: #000000; z-index: 2;">
-  뉴캐슬병
- <p style="position: absolute; top: 2645px; left: 51.5%; transform: translateX(-50%); font-size: 30px; font-weight: bold; color: #000000; z-index: 2; text-align: left;">
-  전염성이 매우 강한 바이러스로 호흡기, 신경계<br> 이상을 유발한다. 기침, 마비, 비틀거림 증상이<br> 나타나며 치사율이 높다.<br>예방접종이 가장 효과적인 예방법이다<br>
-   <p style="position: absolute; top: 2645px; left: 51.5%; transform: translateX(-50%); font-size: 35px; font-weight: bold; color: #000000; z-index: 2;">
-  뉴캐슬병
- <p style="position: absolute; top: 2645px; left: 51.5%; transform: translateX(-50%); font-size: 30px; font-weight: bold; color: #000000; z-index: 2; text-align: left;">
-  전염성이 매우 강한 바이러스로 호흡기, 신경계<br> 이상을 유발한다. 기침, 마비, 비틀거림 증상이<br> 나타나며 치사율이 높다.<br>예방접종이 가장 효과적인 예방법이다<br>
    <div class="back-button-container">
   <div class="back-triangle"></div>
   <button class="back-button" onclick="location.href='index.html'">나가기</button>
@@ -210,5 +212,6 @@
   <p style="position: relative; z-index: 1;"></p>
 
   <div class="background-shape"></div>
+  
 </body>
 </html>
